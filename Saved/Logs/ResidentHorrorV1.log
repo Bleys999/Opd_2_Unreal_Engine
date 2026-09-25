@@ -5842,3 +5842,86 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2026.09.25-15.43.46:396][970]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
 [2026.09.25-15.43.46:405][970]AssetCheck: /Game/ResidentHorrorV1/Maps/Map_MechanicMap Validating asset
 [2026.09.25-15.43.46:478][970]LogSourceControl: Display: Uncontrolled Changelist persistency file saved C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/SourceControl/UncontrolledChangelists.json
+[2026.09.25-15.44.20:894][114]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2026.09.25-15.44.20:926][114]LogStall: Shutdown...
+[2026.09.25-15.44.20:927][114]LogStall: Shutdown complete.
+[2026.09.25-15.44.20:949][114]LogSlate: Window 'ResidentHorrorV1 - Unreal Editor' being destroyed
+[2026.09.25-15.44.21:030][114]Cmd: QUIT_EDITOR
+[2026.09.25-15.44.21:030][115]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2026.09.25-15.44.21:033][115]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2026.09.25-15.44.21:033][115]LogStaticMesh: Abandoning remaining async distance field tasks for shutdown
+[2026.09.25-15.44.21:033][115]LogStaticMesh: Abandoning remaining async card representation tasks for shutdown
+[2026.09.25-15.44.21:062][115]LogWorld: UWorld::CleanupWorld for Map_MechanicMap, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:062][115]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+[2026.09.25-15.44.21:064][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:064][115]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/ResidentHorrorV1/Maps/Map_MechanicMap.Map_MechanicMap
+[2026.09.25-15.44.21:071][115]LogTedsSettings: UTedsSettingsEditorSubsystem::Deinitialize
+[2026.09.25-15.44.21:072][115]LogLevelSequenceEditor: LevelSequenceEditor subsystem deinitialized.
+[2026.09.25-15.44.21:074][115]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:074][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:074][115]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:075][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:075][115]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:075][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:075][115]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:075][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:075][115]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:075][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:075][115]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:075][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:076][115]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:076][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:076][115]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:076][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:076][115]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:076][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:076][115]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:076][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:076][115]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:076][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:076][115]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:076][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:076][115]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.44.21:076][115]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.44.21:077][115]LogRuntimeTelemetry: Recording EnginePreExit events
+[2026.09.25-15.44.21:077][115]LogHttp: Warning: 	Sleeping 0.500s to wait for 1 outstanding Http Requests.
+[2026.09.25-15.44.21:577][115]LogStudioTelemetry: Ended StudioTelemetry Session
+[2026.09.25-15.44.21:583][115]LogAnalytics: Display: [UEEditor.Rocket.Release] AnalyticsET::EndSession
+[2026.09.25-15.44.21:585][115]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2026.09.25-15.44.21:585][115]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2026.09.25-15.44.21:585][115]LogAudio: Display: Audio Device unregistered from world 'Map_MechanicMap'.
+[2026.09.25-15.44.21:585][115]LogAudio: Display: Shutting down audio device while 1 references to it are still alive. For more information, compile with INSTRUMENT_AUDIODEVICE_HANDLES.
+[2026.09.25-15.44.21:585][115]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1, StreamState=4
+[2026.09.25-15.44.21:587][115]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=1, StreamState=2
+[2026.09.25-15.44.21:591][115]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID -1
+[2026.09.25-15.44.21:591][115]LogAudio: Display: Audio Device Manager Shutdown
+[2026.09.25-15.44.21:599][115]LogWindowsTextInputMethodSystem: Activated input method: Русский (Россия) - (Keyboard).
+[2026.09.25-15.44.21:602][115]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2026.09.25-15.44.21:602][115]LogExit: Preparing to exit.
+[2026.09.25-15.44.21:636][115]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2026.09.25-15.44.21:932][115]LogEditorDataStorage: Deinitializing
+[2026.09.25-15.44.22:038][115]LogDemo: Cleaned up 0 splitscreen connections, owner deletion: enabled
+[2026.09.25-15.44.22:050][115]LogExit: Editor shut down
+[2026.09.25-15.44.22:052][115]LogExit: Transaction tracking system shut down
+[2026.09.25-15.44.22:168][115]LogExit: Object subsystem successfully closed.
+[2026.09.25-15.44.22:203][115]LogShaderCompilers: Display: Shaders left to compile 0
+[2026.09.25-15.44.22:237][115]LogMemoryProfiler: Shutdown
+[2026.09.25-15.44.22:237][115]LogNetworkingProfiler: Shutdown
+[2026.09.25-15.44.22:237][115]LoadingProfiler: Shutdown
+[2026.09.25-15.44.22:237][115]LogTimingProfiler: Shutdown
+[2026.09.25-15.44.22:237][115]LogChaosVDEditor: [FChaosVDExtensionsManager::UnRegisterExtension] UnRegistering CVD Extension [FChaosVDGenericDebugDrawExtension] ...
+[2026.09.25-15.44.22:237][115]LogChaosVDEditor: [FChaosVDExtensionsManager::UnRegisterExtension] UnRegistering CVD Extension [FChaosVDAccelerationStructuresExtension] ...
+[2026.09.25-15.44.22:478][115]LogChaosDD: Chaos Debug Draw Shutdown
+[2026.09.25-15.44.22:478][115]RenderDocPlugin: plugin has been unloaded.
+[2026.09.25-15.44.22:516][115]LogHttp: Warning: [FHttpManager::Shutdown] Unbinding delegates for 1 outstanding Http Requests:
+[2026.09.25-15.44.22:516][115]LogHttp: Warning: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B7AC86D6D-4276-ADCF-1FEA-59BD7A2098D7%7D&AppID=UEEditor.Rocket.Release&AppVersion=5.6.1-44394996%2B%2B%2BUE5%2BRelease-5.6&UserID=1abc65a04bd6cea15d2d11a119f2d209%7C37c7c286f93c44298e13c5d373799080%7Cebaefa6f-cec6-44bf-afd2-e07d4722ec5d&AppEnvironment=datacollector-binary&UploadType=eteventstream] refs=[2] status=Processing
+[2026.09.25-15.44.22:544][115]LogEOSShared: FEOSSDKManager::Shutdown EOS_Shutdown Result=[EOS_Success]
+[2026.09.25-15.44.22:544][115]LogNFORDenoise: NFORDenoise function shutting down
+[2026.09.25-15.44.22:544][115]LogXGEController: Cleaning working directory: C:/Users/arist/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2026.09.25-15.44.22:546][115]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetActorFactory id: 0
+[2026.09.25-15.44.22:546][115]LogIris: FNetObjectFactoryRegistry::UnregisterFactory is unregistering factory: None name: NetSubObjectFactory id: 1
+[2026.09.25-15.44.22:546][115]LogPakFile: Destroying PakPlatformFile
+[2026.09.25-15.44.22:549][115]LogD3D11RHI: Shutdown
+[2026.09.25-15.44.22:549][115]LogD3D11RHI: CleanupD3DDevice
+[2026.09.25-15.44.22:573][115]LogExit: Exiting.
+[2026.09.25-15.44.22:589][115]Log file closed, 09/25/26 18:44:22
