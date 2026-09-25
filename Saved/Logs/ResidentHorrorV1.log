@@ -2993,3 +2993,434 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2026.09.25-14.57.15:167][627]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2, StreamState=2
 [2026.09.25-14.57.15:190][627]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
 [2026.09.25-14.57.15:273][628]LogPlayLevel: Display: Destroying online subsystem :Context_2
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: ================================================
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Total job queries 2 192, among them cache hits 34 (1.55%), DDC hits 1 242 (56.66%), Duplicates 737 (33.62%)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Tracking 1 421 distinct input hashes that result in 975 distinct outputs (68.61%)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: RAM used: 3,69 MiB of 1,60 GiB budget. Usage: 0.23%
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Shaders Compiled: 179
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Jobs assigned 179, completed 179 (100%)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Average time worker was idle: 38.45 s
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Time job spent in pending queue: average 21.38 s, longest 45.77 s
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Job execution time: average 2.71 s, max 37.84 s
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Job life time (pending + execution): average 24.10 s, max 48.33
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Shader code size: total 1,331 MiB, numShaders 204, average 6,684 KiB, min 332 B, max 73,199 KiB
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 67.98 s
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.00%
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Jobs were issued in 176 batches (only local compilation was used), average 1.02 jobs/batch
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Average processing rate: 2.63 jobs/sec
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Total thread time: 218,788 s
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Total thread preprocess time: 23,253 s
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Percentage time preprocessing: 10.63%
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Effective parallelization: 3.22 (times faster than compiling all shaders on one thread). Compare with number of workers: 8 - 0.402286
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display:                                             FDebugViewModePS (compiled    1 times, average 3.82 sec, max 3.82 sec, min 3.82 sec)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display:                                                 FDepthOnlyPS (compiled    6 times, average 3.57 sec, max 5.69 sec, min 0.68 sec)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display:                                                  FVelocityPS (compiled   11 times, average 1.69 sec, max 3.00 sec, min 0.75 sec)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display:                                                FAnisotropyPS (compiled    8 times, average 1.56 sec, max 1.97 sec, min 0.87 sec)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled   41 times, average 1.27 sec, max 4.43 sec, min 0.42 sec)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 23.85% of total time (compiled   41 times, average 1.27 sec, max 4.43 sec, min 0.42 sec)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 15.51% of total time (compiled   34 times, average 1.00 sec, max 3.67 sec, min 0.31 sec)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display:                                                 FDepthOnlyPS - 9.78% of total time (compiled    6 times, average 3.57 sec, max 5.69 sec, min 0.68 sec)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display:                                                  FVelocityPS - 8.52% of total time (compiled   11 times, average 1.69 sec, max 3.00 sec, min 0.75 sec)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display:                                                FAnisotropyPS - 5.72% of total time (compiled    8 times, average 1.56 sec, max 1.97 sec, min 0.87 sec)
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: === Material stats ===
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Materials Cooked:        0
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Materials Translated:    217
+[2026.09.25-14.57.25:388][ 88]LogShaderCompilers: Display: Material Total Translate Time: 1.64 s
+[2026.09.25-14.57.25:389][ 88]LogShaderCompilers: Display: Material Translation Only: 0.67 s (41%)
+[2026.09.25-14.57.25:389][ 88]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2026.09.25-14.57.25:389][ 88]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2026.09.25-14.57.25:389][ 88]LogShaderCompilers: Display: ================================================
+[2026.09.25-15.21.50:124][823]LogWindowsTextInputMethodSystem: Activated input method: Русский (Россия) - (Keyboard).
+[2026.09.25-15.21.50:124][823]LogWindowsTextInputMethodSystem: Activated input method: Русский (Россия) - (Keyboard).
+[2026.09.25-15.23.06:266][508]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2026.09.25-15.23.07:758][684]LogUObjectHash: Compacting FUObjectHashTables data took   0.34ms
+[2026.09.25-15.25.22:393][736]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2026.09.25-15.25.22:397][736]LogContentBundle: [Map_MechanicMap(Editor)] Generating Streaming for 0 Content Bundles.
+[2026.09.25-15.25.22:397][736]LogWorldPartition: Display: GenerateStreaming for 'Map_MechanicMap' started...
+[2026.09.25-15.25.22:407][736]LogWorldPartition: Display: GenerateStreaming for 'Map_MechanicMap' took 10.497 ms (total: 96.600 ms)
+[2026.09.25-15.25.22:408][736]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.09.25-15.25.22:442][736]LogPlayLevel: Creating play world package: /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap
+[2026.09.25-15.25.22:592][736]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE started...
+[2026.09.25-15.25.22:626][736]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE took 34.349 ms (total: 106.076 ms)
+[2026.09.25-15.25.22:626][736]LogPlayLevel: PIE: StaticDuplicateObject took: (0.183514s)
+[2026.09.25-15.25.22:626][736]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ResidentHorrorV1/Maps/Map_MechanicMap.Map_MechanicMap to /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap (0.183565s)
+[2026.09.25-15.25.22:640][736]LogUObjectHash: Compacting FUObjectHashTables data took   0.51ms
+[2026.09.25-15.25.22:644][736]LogChaosDD: Creating Chaos Debug Draw Scene for world Map_MechanicMap
+[2026.09.25-15.25.22:646][736]LogWorldPartition: ULevel::OnLevelLoaded(Map_MechanicMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2026.09.25-15.25.22:646][736]LogWorldPartition: Display: WorldPartition initialize started...
+[2026.09.25-15.25.22:646][736]LogWorldPartition: UWorldPartition::Initialize : World = /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2026.09.25-15.25.22:646][736]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2026.09.25-15.25.22:681][736]LogWorldPartition: Display: WorldPartition initialize took 35.641 ms (total: 4.43 sec)
+[2026.09.25-15.25.22:681][736]LogPlayLevel: PIE: World Init took: (0.037360s)
+[2026.09.25-15.25.22:681][736]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2026.09.25-15.25.22:681][736]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.09.25-15.25.22:683][736]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.09.25-15.25.22:683][736]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.09.25-15.25.22:683][736]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.09.25-15.25.22:683][736]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.09.25-15.25.22:683][736]LogAudioMixer: Display: 	Max Channels (voices):				  260
+[2026.09.25-15.25.22:683][736]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.09.25-15.25.22:683][736]LogAudio: Display: AudioDevice MaxSources: 260
+[2026.09.25-15.25.22:683][736]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.09.25-15.25.22:683][736]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.09.25-15.25.22:683][736]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.09.25-15.25.22:684][736]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.09.25-15.25.22:706][736]LogAudioMixer: Display: Using Audio Hardware Device Динамики (Razer Barracuda X 2.4)
+[2026.09.25-15.25.22:707][736]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.09.25-15.25.22:707][736]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.09.25-15.25.22:707][736]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.09.25-15.25.22:708][736]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2026.09.25-15.25.22:708][736]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=3
+[2026.09.25-15.25.22:709][736]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2026.09.25-15.25.22:709][736]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2026.09.25-15.25.22:709][736]LogInit: FAudioDevice initialized with ID 3.
+[2026.09.25-15.25.22:709][736]LogAudio: Display: Audio Device (ID: 3) registered with world 'Map_MechanicMap'.
+[2026.09.25-15.25.22:709][736]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 3
+[2026.09.25-15.25.22:712][736]LogLoad: Game class is 'BP_PlayerModeResidentHorror_C'
+[2026.09.25-15.25.22:714][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC985BC02_1695649437)
+[2026.09.25-15.25.22:715][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC94ABC02_1845520199)
+[2026.09.25-15.25.22:719][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC962BE02_1739789421)
+[2026.09.25-15.25.22:719][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_As_VAL_Ammo_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_As_VAL_Ammo_C_UAID_A8A15955FAC9D1C102_2073188087)
+[2026.09.25-15.25.22:720][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbGreen_C_UAID_A8A15955FAC95FD002_1826416871)
+[2026.09.25-15.25.22:722][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_KeyDoor_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_KeyDoor_C_UAID_A8A15955FAC94ABC02_1845512196)
+[2026.09.25-15.25.22:723][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC98CBD02_1248956731)
+[2026.09.25-15.25.22:723][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC94ABC02_1129341137)
+[2026.09.25-15.25.22:727][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgun_C_UAID_A8A15955FAC94ABC02_1664978186)
+[2026.09.25-15.25.22:727][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_As_VAL_Ammo_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_As_VAL_Ammo_C_UAID_A8A15955FAC960D002_1892861080)
+[2026.09.25-15.25.22:727][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC98CBD02_1264449732)
+[2026.09.25-15.25.22:728][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Herb_Child_C_UAID_A8A15955FAC9BCBE02_1574396225)
+[2026.09.25-15.25.22:728][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC94ABC02_1664981188)
+[2026.09.25-15.25.22:730][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC98CBD02_1238599730)
+[2026.09.25-15.25.22:732][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Spray_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Spray_C_UAID_A8A15955FAC960D002_1937803083)
+[2026.09.25-15.25.22:732][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC94ABC02_1845499191)
+[2026.09.25-15.25.22:732][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbGreen_C_UAID_A8A15955FAC9EACA02_1419441999)
+[2026.09.25-15.25.22:732][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_KeyDoor_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_KeyDoor_C_UAID_A8A15955FAC911B502_1391072625)
+[2026.09.25-15.25.22:733][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgunTacticalShort_C_UAID_A8A15955FAC94FCB02_1665323787)
+[2026.09.25-15.25.22:734][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC9E1BD02_1769690688)
+[2026.09.25-15.25.22:734][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Herb_Child_C_UAID_A8A15955FAC9BCBE02_1566439224)
+[2026.09.25-15.25.22:735][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgun_C_UAID_A8A15955FAC94ABC02_1845521200)
+[2026.09.25-15.25.22:735][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC962BE02_1747272422)
+[2026.09.25-15.25.22:735][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Flashlight_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Flashlight_C_UAID_A8A15955FAC9A8B502_2092254203)
+[2026.09.25-15.25.22:736][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC94ABC02_1845510195)
+[2026.09.25-15.25.22:736][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC93ECD02_1416581889)
+[2026.09.25-15.25.22:737][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbGreen_C_UAID_A8A15955FAC9EACA02_1486417009)
+[2026.09.25-15.25.22:737][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC9B4D002_1328954823)
+[2026.09.25-15.25.22:737][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgun_C_UAID_A8A15955FAC955B402_1074456544)
+[2026.09.25-15.25.22:738][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_KeyDoor_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_CHAVEPORTA_C_UAID_A8A15955FAC9D2B302_1851520563)
+[2026.09.25-15.25.22:738][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC9E1BD02_1768087687)
+[2026.09.25-15.25.22:739][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC94EBC02_1690129029)
+[2026.09.25-15.25.22:740][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC9E1BD02_1758949686)
+[2026.09.25-15.25.22:740][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbGreen_C_UAID_A8A15955FAC93ECD02_1412310888)
+[2026.09.25-15.25.22:740][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Spray_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Spray_C_UAID_A8A15955FAC94ABC02_1129344139)
+[2026.09.25-15.25.22:740][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgun_C_UAID_A8A15955FAC94ABC02_1664980187)
+[2026.09.25-15.25.22:740][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgun_C_UAID_A8A15955FAC94ABC02_1845523201)
+[2026.09.25-15.25.22:741][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Flashlight_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Flashlight_C_UAID_A8A15955FAC94ABC02_1616425180)
+[2026.09.25-15.25.22:742][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC954B402_2145220367)
+[2026.09.25-15.25.22:742][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC94ABC02_1664975185)
+[2026.09.25-15.25.22:743][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC94ABC02_1845525202)
+[2026.09.25-15.25.22:743][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC93DCB02_1870227601)
+[2026.09.25-15.25.22:743][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Spray_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Spray_C_UAID_A8A15955FAC94BCB02_2009176063)
+[2026.09.25-15.25.22:743][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_MetalDoor_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_MetalDoor_C_UAID_A8A15955FAC98BE202_1958488621)
+[2026.09.25-15.25.22:743][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_KeyDoor_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_KeyDoor_C_UAID_A8A15955FAC94ECB02_1778612606)
+[2026.09.25-15.25.22:744][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Ammo12PumpShotgun_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Ammo12PumpShotgun_C_UAID_A8A15955FAC979BD02_1369897375)
+[2026.09.25-15.25.22:744][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_As_VAL_Ammo_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_As_VAL_Ammo_C_UAID_A8A15955FAC9D1C102_2092536088)
+[2026.09.25-15.25.22:746][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC9E1BD02_1742053685)
+[2026.09.25-15.25.22:746][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC94EBC02_1643445022)
+[2026.09.25-15.25.22:746][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Spray_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Spray_C_UAID_A8A15955FAC94ABC02_1845503192)
+[2026.09.25-15.25.22:746][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Gun_handle_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Gun_handle_C_UAID_A8A15955FAC961BE02_1581144227)
+[2026.09.25-15.25.22:746][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_BUTT_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_BUTT_C_UAID_A8A15955FAC961BE02_1582520228)
+[2026.09.25-15.25.22:747][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC93DCB02_1799322600)
+[2026.09.25-15.25.22:747][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC954B402_2138107366)
+[2026.09.25-15.25.22:747][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC9AFB502_1734155431)
+[2026.09.25-15.25.22:748][736]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC94ABC02_1129348141)
+[2026.09.25-15.25.22:780][736]LogWorld: Bringing World /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap up for play (max tick rate 0) at 2026.09.25-18.25.22
+[2026.09.25-15.25.22:788][736]LogWorld: Bringing up level for play took: 0.076686
+[2026.09.25-15.25.22:791][736]LogOnline: OSS: Created online subsystem instance for: :Context_3
+[2026.09.25-15.25.22:792][736]AnimBlueprintLog: Warning: SLOTNODE: 'FullBody' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:793][736]AnimBlueprintLog: Warning: SLOTNODE: 'Shooting' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:793][736]AnimBlueprintLog: Warning: SLOTNODE: 'Shooting' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:793][736]AnimBlueprintLog: Warning: SLOTNODE: 'Shooting' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:793][736]AnimBlueprintLog: Warning: SLOTNODE: 'Shooting' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:793][736]AnimBlueprintLog: Warning: SLOTNODE: 'Shooting' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:793][736]AnimBlueprintLog: Warning: SLOTNODE: 'Reload Weapon' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:793][736]AnimBlueprintLog: Warning: SLOTNODE: 'FullBody' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:793][736]AnimBlueprintLog: Warning: SLOTNODE: 'FullBody' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:793][736]AnimBlueprintLog: Warning: SLOTNODE: 'FullBody' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:793][736]AnimBlueprintLog: Warning: SLOTNODE: 'Reload Weapon' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:793][736]AnimBlueprintLog: Warning: SLOTNODE: 'DefaultSlot' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.25.22:812][736]LogScript: Warning: Switch statement failed to match case for index property Temp_int_Variable_3
+	WBP_Configuration_C /Engine/Transient.UnrealEdEngine_0:ResidentHorrorV1_GameInstance_C_1.WBP_Pause_Menu_C_0.WidgetTree_0.WB_Configuration
+	Function /Game/ResidentHorrorV1/Blueprints/WBP/WBP_Player/WBP_Configuration.WBP_Configuration_C:SetVideoOptions:027E
+[2026.09.25-15.25.22:812][736]PIE: Server logged in
+[2026.09.25-15.25.22:814][736]PIE: Play in editor total start time 0,417 seconds.
+[2026.09.25-15.25.50:877][ 53]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2026.09.25-15.25.50:877][ 53]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently_IncludingInitialMouseDown -> NoCapture
+[2026.09.25-15.25.54:319][430]LogViewport: Display: Viewport MouseLockMode Changed, DoNotLock -> LockOnCapture
+[2026.09.25-15.25.54:319][430]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CapturePermanently
+[2026.09.25-15.26.26:276][172]LogViewport: Display: Viewport MouseLockMode Changed, LockOnCapture -> DoNotLock
+[2026.09.25-15.26.26:276][172]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2026.09.25-15.26.26:276][172]LogViewport: Display: Viewport MouseCaptureMode Changed, CapturePermanently -> CaptureDuringMouseDown
+[2026.09.25-15.26.31:555][793]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.09.25-15.26.31:555][793]LogWorld: BeginTearingDown for /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap
+[2026.09.25-15.26.31:555][793]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+[2026.09.25-15.26.31:557][793]LogWorld: UWorld::CleanupWorld for Map_MechanicMap, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.26.31:571][793]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.26.31:572][793]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap
+[2026.09.25-15.26.31:574][793]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.09.25-15.26.31:579][793]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.26.31:605][793]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2026.09.25-15.26.31:605][793]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 3
+[2026.09.25-15.26.31:605][793]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3, StreamState=4
+[2026.09.25-15.26.31:607][793]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3, StreamState=2
+[2026.09.25-15.26.31:611][793]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.09.25-15.26.31:629][793]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2026.09.25-15.26.31:690][794]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2026.09.25-15.26.33:238][974]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2026.09.25-15.26.33:241][974]LogContentBundle: [Map_MechanicMap(Editor)] Generating Streaming for 0 Content Bundles.
+[2026.09.25-15.26.33:241][974]LogWorldPartition: Display: GenerateStreaming for 'Map_MechanicMap' started...
+[2026.09.25-15.26.33:251][974]LogWorldPartition: Display: GenerateStreaming for 'Map_MechanicMap' took 10.223 ms (total: 106.824 ms)
+[2026.09.25-15.26.33:251][974]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2026.09.25-15.26.33:252][974]LogPlayLevel: Creating play world package: /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap
+[2026.09.25-15.26.33:399][974]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE started...
+[2026.09.25-15.26.33:435][974]LogWorldPartition: Display: UWorldPartition::PostDuplicatePIE took 35.609 ms (total: 141.685 ms)
+[2026.09.25-15.26.33:435][974]LogPlayLevel: PIE: StaticDuplicateObject took: (0.183503s)
+[2026.09.25-15.26.33:435][974]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ResidentHorrorV1/Maps/Map_MechanicMap.Map_MechanicMap to /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap (0.183529s)
+[2026.09.25-15.26.33:449][974]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2026.09.25-15.26.33:451][974]LogChaosDD: Creating Chaos Debug Draw Scene for world Map_MechanicMap
+[2026.09.25-15.26.33:453][974]LogWorldPartition: ULevel::OnLevelLoaded(Map_MechanicMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2026.09.25-15.26.33:453][974]LogWorldPartition: Display: WorldPartition initialize started...
+[2026.09.25-15.26.33:453][974]LogWorldPartition: UWorldPartition::Initialize : World = /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2026.09.25-15.26.33:453][974]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2026.09.25-15.26.33:489][974]LogWorldPartition: Display: WorldPartition initialize took 36.261 ms (total: 4.47 sec)
+[2026.09.25-15.26.33:489][974]LogPlayLevel: PIE: World Init took: (0.037910s)
+[2026.09.25-15.26.33:490][974]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2026.09.25-15.26.33:490][974]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.09.25-15.26.33:490][974]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.09.25-15.26.33:490][974]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.09.25-15.26.33:490][974]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.09.25-15.26.33:490][974]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2026.09.25-15.26.33:490][974]LogAudioMixer: Display: 	Max Channels (voices):				  260
+[2026.09.25-15.26.33:490][974]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2026.09.25-15.26.33:490][974]LogAudio: Display: AudioDevice MaxSources: 260
+[2026.09.25-15.26.33:490][974]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.09.25-15.26.33:490][974]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.09.25-15.26.33:490][974]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.09.25-15.26.33:492][974]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2026.09.25-15.26.33:512][974]LogAudioMixer: Display: Using Audio Hardware Device Динамики (Razer Barracuda X 2.4)
+[2026.09.25-15.26.33:513][974]LogAudioMixer: Display: Initializing Sound Submixes...
+[2026.09.25-15.26.33:513][974]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2026.09.25-15.26.33:513][974]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2026.09.25-15.26.33:513][974]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=4
+[2026.09.25-15.26.33:513][974]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=4
+[2026.09.25-15.26.33:515][974]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=4
+[2026.09.25-15.26.33:515][974]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=4
+[2026.09.25-15.26.33:515][974]LogInit: FAudioDevice initialized with ID 4.
+[2026.09.25-15.26.33:515][974]LogAudio: Display: Audio Device (ID: 4) registered with world 'Map_MechanicMap'.
+[2026.09.25-15.26.33:515][974]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 4
+[2026.09.25-15.26.33:517][974]LogLoad: Game class is 'BP_PlayerModeResidentHorror_C'
+[2026.09.25-15.26.33:519][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC985BC02_1695649437)
+[2026.09.25-15.26.33:520][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC94ABC02_1845520199)
+[2026.09.25-15.26.33:524][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC962BE02_1739789421)
+[2026.09.25-15.26.33:524][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_As_VAL_Ammo_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_As_VAL_Ammo_C_UAID_A8A15955FAC9D1C102_2073188087)
+[2026.09.25-15.26.33:525][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbGreen_C_UAID_A8A15955FAC95FD002_1826416871)
+[2026.09.25-15.26.33:528][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_KeyDoor_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_KeyDoor_C_UAID_A8A15955FAC94ABC02_1845512196)
+[2026.09.25-15.26.33:529][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC98CBD02_1248956731)
+[2026.09.25-15.26.33:529][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC94ABC02_1129341137)
+[2026.09.25-15.26.33:532][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgun_C_UAID_A8A15955FAC94ABC02_1664978186)
+[2026.09.25-15.26.33:533][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_As_VAL_Ammo_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_As_VAL_Ammo_C_UAID_A8A15955FAC960D002_1892861080)
+[2026.09.25-15.26.33:533][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC98CBD02_1264449732)
+[2026.09.25-15.26.33:534][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Herb_Child_C_UAID_A8A15955FAC9BCBE02_1574396225)
+[2026.09.25-15.26.33:534][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC94ABC02_1664981188)
+[2026.09.25-15.26.33:536][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC98CBD02_1238599730)
+[2026.09.25-15.26.33:536][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Spray_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Spray_C_UAID_A8A15955FAC960D002_1937803083)
+[2026.09.25-15.26.33:537][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC94ABC02_1845499191)
+[2026.09.25-15.26.33:537][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbGreen_C_UAID_A8A15955FAC9EACA02_1419441999)
+[2026.09.25-15.26.33:537][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_KeyDoor_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_KeyDoor_C_UAID_A8A15955FAC911B502_1391072625)
+[2026.09.25-15.26.33:538][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgunTacticalShort_C_UAID_A8A15955FAC94FCB02_1665323787)
+[2026.09.25-15.26.33:539][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC9E1BD02_1769690688)
+[2026.09.25-15.26.33:539][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Herb_Child_C_UAID_A8A15955FAC9BCBE02_1566439224)
+[2026.09.25-15.26.33:539][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgun_C_UAID_A8A15955FAC94ABC02_1845521200)
+[2026.09.25-15.26.33:540][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC962BE02_1747272422)
+[2026.09.25-15.26.33:540][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Flashlight_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Flashlight_C_UAID_A8A15955FAC9A8B502_2092254203)
+[2026.09.25-15.26.33:541][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC94ABC02_1845510195)
+[2026.09.25-15.26.33:541][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC93ECD02_1416581889)
+[2026.09.25-15.26.33:542][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbGreen_C_UAID_A8A15955FAC9EACA02_1486417009)
+[2026.09.25-15.26.33:542][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC9B4D002_1328954823)
+[2026.09.25-15.26.33:542][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgun_C_UAID_A8A15955FAC955B402_1074456544)
+[2026.09.25-15.26.33:544][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_KeyDoor_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_CHAVEPORTA_C_UAID_A8A15955FAC9D2B302_1851520563)
+[2026.09.25-15.26.33:544][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbRed_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbRed_C_UAID_A8A15955FAC9E1BD02_1768087687)
+[2026.09.25-15.26.33:544][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC94EBC02_1690129029)
+[2026.09.25-15.26.33:545][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC9E1BD02_1758949686)
+[2026.09.25-15.26.33:545][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbGreen_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbGreen_C_UAID_A8A15955FAC93ECD02_1412310888)
+[2026.09.25-15.26.33:545][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Spray_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Spray_C_UAID_A8A15955FAC94ABC02_1129344139)
+[2026.09.25-15.26.33:546][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgun_C_UAID_A8A15955FAC94ABC02_1664980187)
+[2026.09.25-15.26.33:546][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoShotgunTacticalShort_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoShotgun_C_UAID_A8A15955FAC94ABC02_1845523201)
+[2026.09.25-15.26.33:546][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Flashlight_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Flashlight_C_UAID_A8A15955FAC94ABC02_1616425180)
+[2026.09.25-15.26.33:547][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC954B402_2145220367)
+[2026.09.25-15.26.33:548][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC94ABC02_1664975185)
+[2026.09.25-15.26.33:548][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC94ABC02_1845525202)
+[2026.09.25-15.26.33:548][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC93DCB02_1870227601)
+[2026.09.25-15.26.33:548][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Spray_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Spray_C_UAID_A8A15955FAC94BCB02_2009176063)
+[2026.09.25-15.26.33:548][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_MetalDoor_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_MetalDoor_C_UAID_A8A15955FAC98BE202_1958488621)
+[2026.09.25-15.26.33:548][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_KeyDoor_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_KeyDoor_C_UAID_A8A15955FAC94ECB02_1778612606)
+[2026.09.25-15.26.33:549][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Ammo12PumpShotgun_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Ammo12PumpShotgun_C_UAID_A8A15955FAC979BD02_1369897375)
+[2026.09.25-15.26.33:549][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_As_VAL_Ammo_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_As_VAL_Ammo_C_UAID_A8A15955FAC9D1C102_2092536088)
+[2026.09.25-15.26.33:551][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC9E1BD02_1742053685)
+[2026.09.25-15.26.33:551][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC94EBC02_1643445022)
+[2026.09.25-15.26.33:551][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Spray_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Spray_C_UAID_A8A15955FAC94ABC02_1845503192)
+[2026.09.25-15.26.33:552][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_Gun_handle_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Gun_handle_C_UAID_A8A15955FAC961BE02_1581144227)
+[2026.09.25-15.26.33:552][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_BUTT_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_BUTT_C_UAID_A8A15955FAC961BE02_1582520228)
+[2026.09.25-15.26.33:552][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC93DCB02_1799322600)
+[2026.09.25-15.26.33:552][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_AmmoPistol_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_AmmoPistol_C_UAID_A8A15955FAC954B402_2138107366)
+[2026.09.25-15.26.33:553][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_SpaceInventory_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_Chest_C_UAID_A8A15955FAC9AFB502_1734155431)
+[2026.09.25-15.26.33:553][974]LogSkinnedMeshComp: Warning: GetSocketByName(None): No SkeletalMesh for Component(SkeletalMesh) Actor(BP_HerbYellow_C /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap:PersistentLevel.BP_HerbYellow_C_UAID_A8A15955FAC94ABC02_1129348141)
+[2026.09.25-15.26.33:582][974]LogWorld: Bringing World /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap up for play (max tick rate 0) at 2026.09.25-18.26.33
+[2026.09.25-15.26.33:589][974]LogWorld: Bringing up level for play took: 0.071318
+[2026.09.25-15.26.33:591][974]LogOnline: OSS: Created online subsystem instance for: :Context_4
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'FullBody' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'Shooting' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'Shooting' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'Shooting' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'Shooting' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'Shooting' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'Reload Weapon' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'FullBody' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'FullBody' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'FullBody' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'Reload Weapon' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:593][974]AnimBlueprintLog: Warning: SLOTNODE: 'DefaultSlot' in animation instance class ABP_Player_C already exists. Remove duplicates from the animation graph for this class.
+[2026.09.25-15.26.33:611][974]LogScript: Warning: Switch statement failed to match case for index property Temp_int_Variable_3
+	WBP_Configuration_C /Engine/Transient.UnrealEdEngine_0:ResidentHorrorV1_GameInstance_C_2.WBP_Pause_Menu_C_0.WidgetTree_0.WB_Configuration
+	Function /Game/ResidentHorrorV1/Blueprints/WBP/WBP_Player/WBP_Configuration.WBP_Configuration_C:SetVideoOptions:027E
+[2026.09.25-15.26.33:612][974]PIE: Server logged in
+[2026.09.25-15.26.33:613][974]PIE: Play in editor total start time 0,372 seconds.
+[2026.09.25-15.26.40:095][733]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.09.25-15.26.40:095][733]LogWorld: BeginTearingDown for /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap
+[2026.09.25-15.26.40:095][733]LogCrowdFollowing: Warning: Unable to find RecastNavMesh instance while trying to create UCrowdManager instance
+[2026.09.25-15.26.40:097][733]LogWorld: UWorld::CleanupWorld for Map_MechanicMap, bSessionEnded=true, bCleanupResources=true
+[2026.09.25-15.26.40:111][733]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.26.40:111][733]LogWorldPartition: UWorldPartition::Uninitialize : World = /Game/ResidentHorrorV1/Maps/UEDPIE_0_Map_MechanicMap.Map_MechanicMap
+[2026.09.25-15.26.40:115][733]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2026.09.25-15.26.40:120][733]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.09.25-15.26.40:139][733]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.09.25-15.26.40:145][733]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 4
+[2026.09.25-15.26.40:145][733]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4, StreamState=4
+[2026.09.25-15.26.40:147][733]LogAudioMixer: Display: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4, StreamState=2
+[2026.09.25-15.26.40:174][733]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2026.09.25-15.26.40:240][734]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2026.09.25-15.27.03:924][418]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Engine/BasicShapes/Cube.Cube
+[2026.09.25-15.27.03:924][418]LogActorFactory: Actor Factory attempting to spawn StaticMesh /Engine/BasicShapes/Cube.Cube
+[2026.09.25-15.27.04:038][418]LogActorFactory: Actor Factory spawned StaticMesh /Engine/BasicShapes/Cube.Cube as actor: StaticMeshActor /Game/ResidentHorrorV1/Maps/Map_MechanicMap.Map_MechanicMap:PersistentLevel.StaticMeshActor_UAID_345A601B4237280503_1525927151
+[2026.09.25-15.27.04:055][418]LogActorFactory: Actor Factory spawned StaticMesh /Engine/BasicShapes/Cube.Cube as actor: StaticMeshActor /Game/ResidentHorrorV1/Maps/Map_MechanicMap.Map_MechanicMap:PersistentLevel.StaticMeshActor_UAID_345A601B4237280503_1525927151
+[2026.09.25-15.27.14:016][499]Cmd: DUPLICATE
+[2026.09.25-15.27.14:016][499]Cmd: ACTOR DUPLICATE
+[2026.09.25-15.27.25:622][754]Cmd: DUPLICATE
+[2026.09.25-15.27.25:622][754]Cmd: ACTOR DUPLICATE
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: ================================================
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Total job queries 2 194, among them cache hits 35 (1.60%), DDC hits 1 242 (56.61%), Duplicates 737 (33.59%)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Tracking 1 422 distinct input hashes that result in 976 distinct outputs (68.64%)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: RAM used: 3,69 MiB of 1,60 GiB budget. Usage: 0.23%
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Shaders Compiled: 180
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Jobs assigned 180, completed 180 (100%)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Average time worker was idle: 48.63 s
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Time job spent in pending queue: average 21.26 s, longest 45.77 s
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Job execution time: average 2.70 s, max 37.84 s
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Job life time (pending + execution): average 23.96 s, max 48.33
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Shader code size: total 1,333 MiB, numShaders 205, average 6,662 KiB, min 332 B, max 73,199 KiB
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 68.31 s
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Mutex wait stall in FShaderJobCache::SubmitJobs:  0.00%
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Jobs were issued in 177 batches (only local compilation was used), average 1.02 jobs/batch
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Average processing rate: 2.64 jobs/sec
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Total thread time: 218,927 s
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Total thread preprocess time: 23,268 s
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Percentage time preprocessing: 10.63%
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Effective parallelization: 3.20 (times faster than compiling all shaders on one thread). Compare with number of workers: 8 - 0.400624
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display:                                             FDebugViewModePS (compiled    1 times, average 3.82 sec, max 3.82 sec, min 3.82 sec)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display:                                                 FDepthOnlyPS (compiled    6 times, average 3.57 sec, max 5.69 sec, min 0.68 sec)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display:                                                  FVelocityPS (compiled   11 times, average 1.69 sec, max 3.00 sec, min 0.75 sec)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display:                                                FAnisotropyPS (compiled    8 times, average 1.56 sec, max 1.97 sec, min 0.87 sec)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy (compiled   41 times, average 1.27 sec, max 4.43 sec, min 0.42 sec)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display:                                 TBasePassPSFNoLightMapPolicy - 23.83% of total time (compiled   41 times, average 1.27 sec, max 4.43 sec, min 0.42 sec)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display:                                 TBasePassVSFNoLightMapPolicy - 15.50% of total time (compiled   34 times, average 1.00 sec, max 3.67 sec, min 0.31 sec)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display:                                                 FDepthOnlyPS - 9.77% of total time (compiled    6 times, average 3.57 sec, max 5.69 sec, min 0.68 sec)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display:                                                  FVelocityPS - 8.51% of total time (compiled   11 times, average 1.69 sec, max 3.00 sec, min 0.75 sec)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display:                                                FAnisotropyPS - 5.71% of total time (compiled    8 times, average 1.56 sec, max 1.97 sec, min 0.87 sec)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: === Material stats ===
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Materials Cooked:        0
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Materials Translated:    217
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Material Total Translate Time: 1.64 s
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Material Translation Only: 0.67 s (41%)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Material DDC Serialization Only: 0.00 s (0%)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: Material Cache Hits: 0 (0%)
+[2026.09.25-15.27.25:852][774]LogShaderCompilers: Display: ================================================
+[2026.09.25-15.27.36:386][881]Cmd: DUPLICATE
+[2026.09.25-15.27.36:386][881]Cmd: ACTOR DUPLICATE
+[2026.09.25-15.27.40:838][383]Cmd: DUPLICATE
+[2026.09.25-15.27.40:838][383]Cmd: ACTOR DUPLICATE
+[2026.09.25-15.27.54:787][890]Cmd: DUPLICATE
+[2026.09.25-15.27.54:787][890]Cmd: ACTOR DUPLICATE
+[2026.09.25-15.27.58:446][307]Cmd: DUPLICATE
+[2026.09.25-15.27.58:446][307]Cmd: ACTOR DUPLICATE
+[2026.09.25-15.28.05:516][ 80]Cmd: DUPLICATE
+[2026.09.25-15.28.05:516][ 80]Cmd: ACTOR DUPLICATE
+[2026.09.25-15.28.11:991][811]Cmd: DUPLICATE
+[2026.09.25-15.28.11:991][811]Cmd: ACTOR DUPLICATE
+[2026.09.25-15.28.53:088][587]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2026.09.25-15.28.53:305][587]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/3/KS/ZVMJZ2D771FB3B1IRUU6U3_Auto1
+[2026.09.25-15.28.53:305][587]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/ZVMJZ2D771FB3B1IRUU6U3_Auto1F0A0DE43474A82E50ACFE3B25DA7FF11.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/3/KS/ZVMJZ2D771FB3B1IRUU6U3_Auto1.uasset'
+[2026.09.25-15.28.53:359][587]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/1/KZ/YSSQFBZVDPVC3PLKYOL32F_Auto1
+[2026.09.25-15.28.53:359][587]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/YSSQFBZVDPVC3PLKYOL32F_Auto197BCAFF24B303FF655D67DBD1B55137D.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/1/KZ/YSSQFBZVDPVC3PLKYOL32F_Auto1.uasset'
+[2026.09.25-15.28.53:365][587]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/1/SU/RJD86JB94MEFXEO95R80WL_Auto1
+[2026.09.25-15.28.53:365][587]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/RJD86JB94MEFXEO95R80WL_Auto1E6132A88431C824FB3A10AA510242200.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/1/SU/RJD86JB94MEFXEO95R80WL_Auto1.uasset'
+[2026.09.25-15.28.53:372][587]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/C/MI/UKIK1S1O7MTQLBT8BE0FB2_Auto1
+[2026.09.25-15.28.53:372][587]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/UKIK1S1O7MTQLBT8BE0FB2_Auto174F623984357566CDB084C8BC38CAACB.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/C/MI/UKIK1S1O7MTQLBT8BE0FB2_Auto1.uasset'
+[2026.09.25-15.28.53:378][587]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/E/VU/JUEL1N7WO6H6VYLKJBVJBG_Auto1
+[2026.09.25-15.28.53:378][587]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/JUEL1N7WO6H6VYLKJBVJBG_Auto15B2C6CE041B12D538FBCEBB7470B581C.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/E/VU/JUEL1N7WO6H6VYLKJBVJBG_Auto1.uasset'
+[2026.09.25-15.28.53:383][587]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/2/3G/35RWYCVSAIO9CRZSQRPIES_Auto1
+[2026.09.25-15.28.53:383][587]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/35RWYCVSAIO9CRZSQRPIES_Auto1D1891B734AF735BE61DDC2814679891B.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/2/3G/35RWYCVSAIO9CRZSQRPIES_Auto1.uasset'
+[2026.09.25-15.28.53:390][587]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/8/88/EXANKJ3YKHQDUMW31HLH2Q_Auto1
+[2026.09.25-15.28.53:390][587]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/EXANKJ3YKHQDUMW31HLH2Q_Auto17A2D431A4E263DED73A5DCA1C2FF074C.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/8/88/EXANKJ3YKHQDUMW31HLH2Q_Auto1.uasset'
+[2026.09.25-15.28.53:396][587]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/B/E9/BVAKG19LL540836AEDICX8_Auto1
+[2026.09.25-15.28.53:396][587]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/BVAKG19LL540836AEDICX8_Auto1807D8C0D439A39147D511199ADC1F029.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/B/E9/BVAKG19LL540836AEDICX8_Auto1.uasset'
+[2026.09.25-15.28.53:402][587]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/6/BM/VGZ2U2ZZLIGN49NUFRIHJB_Auto1
+[2026.09.25-15.28.53:402][587]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/VGZ2U2ZZLIGN49NUFRIHJB_Auto1AEEFE9E6411AA145FBD273B270B9EC39.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/Autosaves/Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/6/BM/VGZ2U2ZZLIGN49NUFRIHJB_Auto1.uasset'
+[2026.09.25-15.28.53:403][587]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/ResidentHorrorV1/Maps/Map_MechanicMap' took 0.331
+[2026.09.25-15.28.53:403][587]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.331
+[2026.09.25-15.29.07:646][787]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2026.09.25-15.29.07:726][787]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/3/KS/ZVMJZ2D771FB3B1IRUU6U3
+[2026.09.25-15.29.07:726][787]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/ZVMJZ2D771FB3B1IRUU6U376EFBD2D43521B4EF2C88190D1E7F840.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Content/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/3/KS/ZVMJZ2D771FB3B1IRUU6U3.uasset'
+[2026.09.25-15.29.07:780][787]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/1/KZ/YSSQFBZVDPVC3PLKYOL32F
+[2026.09.25-15.29.07:780][787]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/YSSQFBZVDPVC3PLKYOL32F067AA7B4416E57BF5F82D281C5598571.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Content/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/1/KZ/YSSQFBZVDPVC3PLKYOL32F.uasset'
+[2026.09.25-15.29.07:786][787]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/1/SU/RJD86JB94MEFXEO95R80WL
+[2026.09.25-15.29.07:786][787]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/RJD86JB94MEFXEO95R80WL94962885431FE420A7B8B0B5AC81676C.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Content/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/1/SU/RJD86JB94MEFXEO95R80WL.uasset'
+[2026.09.25-15.29.07:792][787]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/C/MI/UKIK1S1O7MTQLBT8BE0FB2
+[2026.09.25-15.29.07:792][787]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/UKIK1S1O7MTQLBT8BE0FB2C20E4355458A1A2309C3849DE8177DB4.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Content/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/C/MI/UKIK1S1O7MTQLBT8BE0FB2.uasset'
+[2026.09.25-15.29.07:796][787]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/E/VU/JUEL1N7WO6H6VYLKJBVJBG
+[2026.09.25-15.29.07:796][787]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/JUEL1N7WO6H6VYLKJBVJBG0710E6344FF0EBC8EC9E3AAC45EC2F23.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Content/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/E/VU/JUEL1N7WO6H6VYLKJBVJBG.uasset'
+[2026.09.25-15.29.07:803][787]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/2/3G/35RWYCVSAIO9CRZSQRPIES
+[2026.09.25-15.29.07:803][787]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/35RWYCVSAIO9CRZSQRPIESD6897CBC4873F48713220CB6A1C3AE98.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Content/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/2/3G/35RWYCVSAIO9CRZSQRPIES.uasset'
+[2026.09.25-15.29.07:808][787]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/8/88/EXANKJ3YKHQDUMW31HLH2Q
+[2026.09.25-15.29.07:808][787]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/EXANKJ3YKHQDUMW31HLH2Q9A86487B4C57AE78DDE783AED95E4A29.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Content/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/8/88/EXANKJ3YKHQDUMW31HLH2Q.uasset'
+[2026.09.25-15.29.07:813][787]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/B/E9/BVAKG19LL540836AEDICX8
+[2026.09.25-15.29.07:813][787]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/BVAKG19LL540836AEDICX8BA0DB2374F72A8D3A54FB383BAAFDC9B.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Content/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/B/E9/BVAKG19LL540836AEDICX8.uasset'
+[2026.09.25-15.29.07:820][787]LogSavePackage: Moving output files for package: /Game/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/6/BM/VGZ2U2ZZLIGN49NUFRIHJB
+[2026.09.25-15.29.07:820][787]LogSavePackage: Moving 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/VGZ2U2ZZLIGN49NUFRIHJB2CFFB24846116039E7029E8FBF0AC438.tmp' to 'C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Content/__ExternalActors__/ResidentHorrorV1/Maps/Map_MechanicMap/6/BM/VGZ2U2ZZLIGN49NUFRIHJB.uasset'
+[2026.09.25-15.29.07:835][787]LogFileHelpers: InternalPromptForCheckoutAndSave took 189.301 ms
+[2026.09.25-15.29.07:897][787]LogContentValidation: Display: Starting to validate 9 assets
+[2026.09.25-15.29.07:897][787]LogContentValidation: Enabled validators:
+[2026.09.25-15.29.07:897][787]LogContentValidation: 	/Script/DataValidation.EditorValidator_Material
+[2026.09.25-15.29.07:897][787]LogContentValidation: 	/Script/DataValidation.DirtyFilesChangelistValidator
+[2026.09.25-15.29.07:897][787]LogContentValidation: 	/Script/DataValidation.EditorValidator_Localization
+[2026.09.25-15.29.07:897][787]LogContentValidation: 	/Script/DataValidation.PackageFileValidator
+[2026.09.25-15.29.07:897][787]LogContentValidation: 	/Script/DataValidation.WorldPartitionChangelistValidator
+[2026.09.25-15.29.07:897][787]LogContentValidation: 	/Script/InputBlueprintNodes.EnhancedInputUserWidgetValidator
+[2026.09.25-15.29.07:952][787]AssetCheck: /Game/ResidentHorrorV1/Maps/Map_MechanicMap Validating asset
+[2026.09.25-15.29.08:040][787]LogSourceControl: Display: Uncontrolled Changelist persistency file saved C:/Users/arist/Documents/Unreal Projects/ResidentHorrorV1/Saved/SourceControl/UncontrolledChangelists.json
